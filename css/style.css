@@ -1,0 +1,66 @@
+/*Raleway Font*/
+@font-face {font-family: 'AquireBold';
+    src: url(../fonts/Aquire/AquireBold-8Ma60.otf) format('opentype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: bold;
+}
+
+@font-face {font-family: "raleway-bold";
+    src: url(../fonts/raleway/Raleway-Bold.ttf) format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: bold;
+}
+@font-face {font-family: "raleway";
+    src: url(../fonts/raleway/Raleway-Regular.ttf) format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: normal;
+}
+
+
+/*Roboto Font*/
+@font-face {font-family: 'robotoRegular';
+    src: url(../fonts/roboto/Roboto-Regular.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'robotoBlack';
+    src: url(../fonts/roboto/Roboto-Black.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'robotoLight';
+    src: url(../fonts/roboto/Roboto-Light.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'robotoThin';
+    src: url(../fonts/roboto/Roboto-Thin.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'robotoMedium';
+    src: url(../fonts/roboto/Roboto-Medium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'robotoBold';
+    src: url(../fonts/roboto/Roboto-Bold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'robotoItalic';
+    src: url(../fonts/roboto/Roboto-Italic.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+
+
+
+
+
+body {
+    width: 1681px;
+    max-width: 1681px;
+    background-color: white;
+}
+
+.containers {
+    padding-left: 214px;
+    padding-right: 214px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
