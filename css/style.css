@@ -1,66 +1,357 @@
-/*Raleway Font*/
-@font-face {font-family: 'AquireBold';
-    src: url(../fonts/Aquire/AquireBold-8Ma60.otf) format('opentype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: bold;
-}
 
-@font-face {font-family: "raleway-bold";
-    src: url(../fonts/raleway/Raleway-Bold.ttf) format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: bold;
-}
-@font-face {font-family: "raleway";
-    src: url(../fonts/raleway/Raleway-Regular.ttf) format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: normal;
-}
-
-
-/*Roboto Font*/
-@font-face {font-family: 'robotoRegular';
-    src: url(../fonts/roboto/Roboto-Regular.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+/*Inter Font*/
+@font-face {font-family: 'InterRegular';
+    src: url(../fonts/Inter/Inter-Regular-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'robotoBlack';
-    src: url(../fonts/roboto/Roboto-Black.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+@font-face {font-family: 'InterBlack';
+    src: url(../fonts/Inter/Inter-Black-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'robotoLight';
-    src: url(../fonts/roboto/Roboto-Light.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+@font-face {font-family: 'InterLight';
+    src: url(../fonts/Inter/Inter-ExtraLight-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'robotoThin';
-    src: url(../fonts/roboto/Roboto-Thin.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+@font-face {font-family: 'InterThin';
+    src: url(../fonts/Inter/Inter-Thin-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'robotoMedium';
-    src: url(../fonts/roboto/Roboto-Medium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+@font-face {font-family: 'InterMedium';
+    src: url(../fonts/Inter/Inter-Medium-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'robotoBold';
-    src: url(../fonts/roboto/Roboto-Bold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+@font-face {font-family: 'InterBold';
+    src: url(../fonts/Inter/Inter-Bold-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'robotoItalic';
-    src: url(../fonts/roboto/Roboto-Italic.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+@font-face {font-family: 'Inter-Variable';
+    src: url(../fonts/Inter/Inter-VariableFont_slnt,wght.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-
-
-
 
 
 body {
-    width: 1681px;
-    max-width: 1681px;
     background-color: white;
-}
-
-.containers {
-    padding-left: 214px;
-    padding-right: 214px;
+    font-family: Inter-Variable;
 }
 
 a {
     text-decoration: none;
+    font: 12px Inter-Variable, sans-serif;
 }
 
+header .container {
+    padding: 0;
+}
+
+header .navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #3a7fff;
+    z-index: 10;
+}
+
+header a{
+    color: #fff;
+}
+
+header .dropdown-toggle{
+    color: white;
+    font-size: 25px;
+}
+
+header .dropdown-toggle::after{
+    display: none;
+}
+
+header #navbarNav>ul>li {
+    height: 70px;
+    display: flex !important;
+    align-items: center;
+}
+
+
+#banner{
+    background-color: #3a7fff;
+    padding-top: 125px;
+}
+
+#banner .banner-1{
+    width: 280px;
+}
+#banner .title {
+    padding-bottom: 90px;
+}
+#banner .title>h1 {
+    font-size: 26px;
+    font-family: InterBold;
+    margin-top: 0px;
+    margin-bottom: 9.5px;
+}
+#banner .title>.h4 {
+    font-size: 15px;
+    margin: 9.5px auto;
+}
+
+#banner .banner-Btn {
+    width: 276px;
+    margin-right: auto;
+    margin-top: 25px;
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #fff;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+#banner .banner-Btn>.btn-link {
+    border-radius: 100px;
+    padding: 12px;
+}
+#banner .banner-Btn>.btn-link>a{
+    text-decoration: revert;
+}
+#banner .banner-Btn>.btn-side {
+    color: #fff;
+    font-size: 12px;
+    background-color: #1c3f7f;
+    border-radius: 100px;
+    padding: 14px;
+}
+
+#step-1{
+    margin-top: 50px;
+    font-size: 14px;
+    font-family: InterRegular;
+}
+#step-1 .step-content>h2{
+    font-family: InterRegular;
+    font-weight: 600;
+    color: #3c3c3c;
+}
+
+#step-1 .features-list{
+    margin-left: -18px;
+}
+#step-1 .features-list>li::marker {
+    display: inline-block;
+    font-size: 20px;
+    line-height: normal;
+    content: "\2713  ";
+    position: absolute;
+    left: 0;
+    margin: 0;
+}
+#step-1 .features-list h4 {
+    font-family: InterMedium;
+    font-size: 16px;
+    margin-top: 9.5px;
+    margin-bottom: 9.5px;
+}
+
+#step-1 .step-content>h2{
+    font-size: 16px;
+}
+
+#step-1 .features-list p{
+    margin-top: 9.5px;
+    margin-bottom: 9.5px;
+}
+
+#step-1 .step-content>a {
+    font-size: 14px;
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 360px) {
+    header .container {
+        max-width: 750px;
+    }
+    header .navbar-brand {
+        height: 45px;
+    }
+    header .logoXl-hidden {
+        display: none;
+    }
+    header .navbar-collapse {
+        background-color: #3472e5;
+        z-index: 10 !important;
+    }
+    header #navbarNav>ul>li {
+        border-bottom: 1px solid #3a7fff;
+    }
+    header #navbarNav>ul>.active>a {
+        color: #1c3f7f;
+    }
+    header .search>i {
+        font-size: 22px;
+        color: white;
+    }
+    header>#search-box {
+        z-index: 0;
+        position: absolute;
+        background-color: #1c3f7f;
+        left: 0;
+        width: 100%;
+        transition: 1s;
+    }
+    .deactivate {
+        top: -100px;
+    }
+    .activate {
+        top: 61px;
+    }
+    header>#search-box>.input-group{
+        border-radius: 6px;
+        max-width: 80%;
+    }
+    #banner .banner-Btn>.btn-link {
+        padding: 12px 12px
+    }
+    #banner .banner-Btn>.btn-side {
+        font-size: 12px;
+        padding: 12px 12px;
+    }
+}
+
+/* very small devices (tablets, 480px and up) */
+@media (min-width: 480px) {
+    .container {
+        max-width: 465px !important;
+    }
+    a{
+        font-size: 14px;
+    }
+    #banner .banner-Btn {
+        width: 312px;
+    }
+    #banner .banner-Btn>.btn-link {
+        padding: 12px 12px
+    }
+    #banner .banner-Btn>.btn-side {
+        font-size: 14px;
+        padding: 12px 12px;
+    }
+}
+
+
+/* small devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        max-width: 750px !important;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px !important;
+    }
+    #banner .title {
+        padding-bottom: 50px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px !important;
+    }
+    header .container {
+        max-width: 940px;
+    }
+    header .navbar{
+        padding: 0;
+        height: 70px;
+    }
+    header .navbar-brand {
+        height: 55px;
+    }
+    header .navbar-collapse {
+        background-color: transparent;
+    }
+    header .search {
+        display: none;
+    }
+    header #navbarNav>ul>li {
+        display: inline-block;
+    }
+    header #navbarNav>ul>.active {
+        border-bottom: 5px solid #1c3f7f;
+    }
+    header #navbarNav>ul>.active>a {
+        color: #1c3f7f;
+        margin-bottom: -5px;
+    }
+    header #navbarNav>ul>li>.post-Btn {
+        text-align: center;
+        background-color: #16c153;
+        padding: 12px 10px  !important;
+        width: 130px;
+        border-radius: 20px;
+        margin-left: 0;
+    }
+    header>#search-box {
+        display: none;
+    }
+    #banner .title>h1 {
+        font-size: 30px;
+        font-family: InterBold;
+    }
+    #banner .title>.h4 {
+        font-size: 16px;
+    }
+    #banner .banner-Btn {
+        width: 376px;
+    }
+    #banner .banner-Btn>.btn-link {
+        padding: 12px 25px
+    }
+    #banner .banner-Btn>.btn-side {
+        font-size: 14px;
+        padding: 12px 25px;
+    }
+    #step-1 img{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    #step-1 .step-content>h2{
+        font-size: 20px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px !important;
+    }
+    header .container {
+        max-width: 90%;
+    }
+    header .logoXl-hidden {
+        display: initial;
+    }
+    header .logoXs-visible {
+        display: none;
+    }
+    #step-1 .step-content>h2{
+        font-size: 32px;
+    }
+    #step-1 img{
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+    #step-1 .step-content p{
+        line-height: 32px;
+    }
+}
 

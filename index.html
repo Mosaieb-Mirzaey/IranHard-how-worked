@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mosaieb Mirzaey">
     <title>How It Works (freelancers) - Workana</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -23,19 +23,109 @@
 <!-- header -->
 
 <header id="header">
-
+    <nav class="navbar-fixed-top">
+       <div class="container ">
+           <nav class="navbar navbar-expand-lg">
+               <a href="#" title="Home" class="navbar-brand d-flex align-items-center">
+                   <img src="images/icon/logo_Xl.png" class="logoXl-hidden" alt="Workana - Access the best talent in Latin America" width="130">
+                   <img src="images/icon/logo_Xs.png" class="logoXs-visible" alt="Workana - Access the best talent in Latin America" height="30">
+               </a>
+               <div class="search ml-auto mr-3">
+                   <i class="fa fa-search"></i>
+               </div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="fa fa-bars text-white"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav w-100">
+                       <li class="nav-item">
+                           <a class="p-3" href="#" title="Freelancers">Freelancers<span class="sr-only">(current)</span></a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="p-3" href="#" title="Jobs">Jobs</a>
+                       </li>
+                       <li class="nav-item active">
+                           <a class="p-3" href="#" title="How it works">How it works</a>
+                       <li class="nav-item  ml-lg-auto">
+                           <a class="p-3" href="#" title="Register">Register</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="p-3" href="#" title="Sign in">Sign in</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="post-Btn p-3" href="#" role="button" title="Post a project">Post a project</a>
+                       </li>
+                   </ul>
+               </div>
+           </nav>
+       </div>
+    </nav>
+    <div id="search-box" class="deactivate py-3">
+        <div class="input-group border bg-white mx-auto">
+            <input type="text" class="form-control border-0 py-0 m-1">
+            <select class="select border-0 small">
+                <option selected class="small">Projects</option>
+                <option value="1" class="small">Freelancers</option>
+            </select>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary  border-0" type="button"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
 </header>
 
-<!--About-->
-<section Id="about">
-
+<!--Banner-->
+<section Id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left text-white">
+                <div class="title">
+                    <h1 class="h1">How does Workana work?</h1>
+                    <p class="h4">Start working as a freelancer right now</p>
+                    <div class="banner-Btn d-flex mx-auto mx-md-0">
+                        <span class="btn-link mr-auto">
+                            <a href="https://www.workana.com/en/how-it-works/client">Find a Freelancer</a>
+                        </span>
+                        <span class="btn-side">Work as a Freelancer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-none d-md-block">
+                <img src="images/Banner/banner-1.png" class="banner-1 d-block ml-auto" alt="banner-1">
+            </div>
+        </div>
+    </div>
 </section>
 
 
-<!--Service-->
-<section Id="service">
-    <div class="containers">
-
+<!--Step-1-->
+<section Id="step-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 step-content">
+                <p class="mb-1">Step 1:</p>
+                <h2>Find projects that match your skills</h2>
+                <p>Hundreds of new clients looking for freelancers post their projects on Workana every week.</p>
+                <ul class="features-list">
+                    <li>
+                        <h4>Create your profile </h4>
+                        <p>Describe your skills and experience.</p>
+                    </li>
+                    <li>
+                        <h4>Find projects to work on</h4>
+                        <p>Browse through the available projects, assess their needs and send your proposals.</p>
+                    </li>
+                    <li>
+                        <h4>Boost your career</h4>
+                        <p>Find new clients and engage them. Build strong long-term relationships with them.</p>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-success btn-lg btn-xs-block d-md-inline">Create your profile and start working</a>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="images/Banner/step-1-animation.gif" alt="animation1">
+            </div>
+        </div>
     </div>
 </section>
 
