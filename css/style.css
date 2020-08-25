@@ -120,21 +120,21 @@ header #navbarNav>ul>li {
     padding: 14px;
 }
 
-#step-1{
+.step{
     margin-top: 50px;
     font-size: 14px;
     font-family: InterRegular;
 }
-#step-1 .step-content>h2{
+.step .step-content>h2{
     font-family: InterRegular;
     font-weight: 600;
     color: #3c3c3c;
 }
 
-#step-1 .features-list{
+.step .features-list{
     margin-left: -18px;
 }
-#step-1 .features-list>li::marker {
+.step .features-list>li::marker {
     display: inline-block;
     font-size: 20px;
     line-height: normal;
@@ -143,30 +143,179 @@ header #navbarNav>ul>li {
     left: 0;
     margin: 0;
 }
-#step-1 .features-list h4 {
+.step .features-list h4 {
     font-family: InterMedium;
     font-size: 16px;
     margin-top: 9.5px;
     margin-bottom: 9.5px;
 }
 
-#step-1 .step-content>h2{
+.step .step-content>h2{
     font-size: 16px;
 }
 
-#step-1 .features-list p{
+.step .features-list p{
     margin-top: 9.5px;
     margin-bottom: 9.5px;
 }
 
-#step-1 .step-content>a {
+.step .step-content>a {
     font-size: 14px;
     border-radius: 20px;
     display: block;
     width: 100%;
 }
+#animation .step-line{
+    height: 1px;
+    text-align: center;
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+}
+#animation .step-line .dot{
+    position: absolute;
+    background-color: #fff;
+    border: 6px solid #3a7fff;
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    transition: opacity .3s;
+    opacity: 1;
+}
+#animation .step-line .start{
+    top: -113px;
+    left: 50%;
+    margin-left: 316px;
+}
+#animation .step-line .end{
+    bottom: -160px;
+    left: 50%;
+    margin-left: -352px;
+}
+#animation .step-line svg{
+    stroke-dasharray: 30;
+    stroke-dashoffset: -881;
+    margin-top: -76px;
+    stroke: #3a7fff;
+    stroke-width: 3px;
+    display: inline-block;
+    animation: 2s svgEffectEnd infinite;
+    -webkit-animation: 2s svgEffectEnd infinite ;
+}
+.step-2{
+    background: url(../images/Banner/step-2-animation.svg) center bottom 30px no-repeat #f0f0f0;
+    padding-bottom: 280px;
+    padding-top: 27px;
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: InterRegular;
+}
+.step-2 .step-2-content>h2{
+    font-family: InterRegular;
+    font-weight: 600;
+    color: #3c3c3c;
+}
+
+.step-2 .features-list{
+    margin-left: -18px;
+}
+.step-2 .features-list>li::marker {
+    display: inline-block;
+    font-size: 20px;
+    line-height: normal;
+    content: "\2713  ";
+    position: absolute;
+    left: 0;
+    margin: 0;
+}
+.step-2 .features-list h4 {
+    font-family: InterMedium;
+    font-size: 15px;
+    margin-top: 9.5px;
+    margin-bottom: 9.5px;
+}
+
+.step-2 .step-2-content>h2{
+    font-size: 15px;
+}
+
+.step-2 .features-list p{
+    margin-top: 9.5px;
+    margin-bottom: 9.5px;
+}
+.step-2 .img-step2{
+    margin-top: 100px;
+    max-width: 100%;
+}
 
 
+#animation-2 .step-line{
+    height: 1px;
+    text-align: center;
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+}
+#animation-2 .step-line .dot{
+    position: absolute;
+    background-color: #fff;
+    border: 6px solid #3a7fff;
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    transition: opacity .3s;
+    opacity: 1;
+}
+#animation-2 .step-line .start{
+    top: -60px;
+    left: 50%;
+    margin-left: -348.5px;
+}
+
+#animation-2 .step-line svg{
+    stroke-dasharray: 430;
+    stroke-dashoffset: -430;
+    margin-left: -329px;
+    margin-top: -38px;
+    stroke-width: 3px;
+    display: inline-block;
+}
+
+.svgEffectEnd-2{
+    stroke: #3a7fff;
+    animation: 2s svgEffectEnd-2 forwards;
+    -webkit-animation: 2s svgEffectEnd-2 forwards ;
+}
+
+.step-3{
+    position: relative;
+    background-color: #3a7fff;
+    color: #fff;
+    padding: 30px 0;
+    margin: 0;
+    text-align: left;
+}
+.step-3 .containerBlue{
+    max-width: 880px;
+    padding: 0 15px;
+}
+.step-3 .step-3-card i{
+    width: 142px;
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    color: white;
+}
+.step-3 .step-3-icon1{
+    background-image: url(../images/icon/step3-Icon1.svg);
+}
+.step-3 .step-3-icon2{
+    background-image: url(../images/icon/step3-Icon2.svg);
+}
+.step-3 .step-3-icon3{
+    background-image: url(../images/icon/step3-Icon2.svg);
+}
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -242,6 +391,9 @@ header #navbarNav>ul>li {
 }
 
 
+
+
+
 /* small devices (tablets, 576px and up) */
 @media (min-width: 576px) {
     .container {
@@ -250,7 +402,12 @@ header #navbarNav>ul>li {
 }
 
 
-/* Medium devices (tablets, 768px and up) */
+
+
+
+
+
+/*********** ( Tablets, Up to 768px ) **************/
 @media (min-width: 768px) {
     .container {
         max-width: 750px !important;
@@ -258,7 +415,17 @@ header #navbarNav>ul>li {
     #banner .title {
         padding-bottom: 50px;
     }
+    .step-2{
+        background: url(../images/Banner/step-2-animation.svg) center right 30px/40% no-repeat #f0f0f0;
+        padding-bottom: 0px;
+    }
+    .step-3 .containerBlue{
+        width: 750px;
+    }
 }
+
+
+
 
 
 /* Large devices (desktops, 992px and up) */
@@ -320,12 +487,42 @@ header #navbarNav>ul>li {
         font-size: 14px;
         padding: 12px 25px;
     }
-    #step-1 img{
+    .step .img-step1{
         margin-top: 10px;
         margin-left: 0;
     }
-    #step-1 .step-content>h2{
+    .step .step-content>h2, .step-2 .step-2-content>h2{
         font-size: 20px;
+    }
+    #animation .step-line .ball{
+        animation: 8s svgEffectBall-lg infinite ;
+    }
+    .step-2{
+        margin-top: 122px;
+        background: #ffffff;
+    }
+    .step-2 .img-step2{
+        margin-top: 10px;
+        max-width: 90%;
+    }
+    .step-3{
+        margin: 109px 0;
+        text-align: center;
+    }
+    .step-3:before{
+        top: -20px;
+        background-image: url(../images/icon/step3-triangle-top.svg);
+        content: '';
+        display: block;
+        position: absolute;
+        padding: 10px 40px;
+        margin-left: -40px;
+        left: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .step-3 .containerBlue{
+        width: 880px;
     }
 }
 
@@ -343,15 +540,65 @@ header #navbarNav>ul>li {
     header .logoXs-visible {
         display: none;
     }
-    #step-1 .step-content>h2{
+    .step .step-content>h2 , .step-2 .step-2-content>h2{
         font-size: 32px;
     }
-    #step-1 img{
+    .step .img-step1{
         margin-top: 50px;
         margin-left: 70px;
     }
-    #step-1 .step-content p{
+    .step-2 .img-step2{
+        margin-top: 50px;
+        max-width: 100%;
+    }
+    .step .step-content p, .step-2 .step-2-content p{
         line-height: 32px;
     }
+    #animation .step-line .start{
+        top: -150px;
+    }
+    #animation .step-line svg {
+        margin-top: -114px;
+    }
+    #animation .step-line .ball{
+        animation: 8s svgEffectBall-xl infinite ;
+    }
+    .step-2{
+        margin-top: 82px;
+    }
 }
+
+
+
+/* Animation Key Frames */
+
+@keyframes svgEffectBall-lg {
+    0%   {border-color:#3a7fff; left:50%; top:-150px;}
+    25%  {border-color:yellow; left:50%; top:85px;}
+    50%  {border-color:crimson; left:154px; top:85px;}
+    75%  {border-color:green; left:-198px; top:85px;}
+    100% {border-color:#3a7fff; left:-198px; top:125px;}
+}
+
+@keyframes svgEffectBall-xl {
+    0%   {border-color:#3a7fff; left:50%; top:-150px;}
+    25%  {border-color:yellow; left:50%; top:45px;}
+    50%  {border-color:crimson; left:240px; top:45px;}
+    75%  {border-color:green; left:-83px; top:45px;}
+    100% {border-color:#3a7fff; left:-83px; top:125px;}
+}
+
+@keyframes svgEffectEnd {
+    to{
+        stroke-dashoffset: 880;
+    }
+}
+
+@keyframes svgEffectEnd-2 {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+
 
