@@ -496,6 +496,49 @@ header #navbarNav>ul>li {
     flex: 0 0 100%;
     max-width: 100%;
 }
+footer{
+    margin-top: 40px;
+    border-color: #8c8c8c;
+    padding-bottom: 3em;
+    color: #3c3c3c;
+    background-color: #f0f0f0;
+}
+footer .footer-top{
+    border-bottom: 1px solid #d7d7d7;
+    margin: 10px -5px;
+    padding-top: 20px;
+    padding-bottom: 28px;
+}
+footer .copyRight{
+    font-size: 14px;
+}
+footer .footer-top .social>a{
+    margin-left: 17px;
+}
+footer .footer-top .social>a>i{
+    color: #8c8c8c;
+    font-size: 22px;
+}
+footer .dropdown .dropdown-toggle{
+    color: #8c8c8c;
+    border: none;
+    background-color: transparent;
+}
+footer .dropdown .dropdown-menu{
+    font-size: 12px;
+    background-color: #f5f5f5;
+    border: 0;
+    top: 6px !important;
+    left: -24px !important;
+    min-width: 165px;
+}
+footer .dropdown .action{
+    color: #3c3c3c;
+    background-color: #d7d7d7 !important;
+}
+
+
+
 
 /****************************************************************************************/
 /****************************************************************************************/
