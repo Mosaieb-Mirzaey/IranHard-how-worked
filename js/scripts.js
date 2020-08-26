@@ -80,3 +80,23 @@ function animatedSvg2() {
 window.addEventListener("scroll", animatedSvg2)
 
 
+
+let svgEffectEnd3 = document.querySelector(".step-3 .step-3-line svg");
+let animation3 = document.querySelector("#animation-2");
+
+function animatedSvg3() {
+    let offset = 600;
+    let distance;
+    function calcLengthOfTop() {
+        let scrollTop = window.scrollY;
+        let elementOffset = animation3.offsetTop;
+        distance = (elementOffset - scrollTop);
+        return distance
+    }
+
+    if (calcLengthOfTop() < offset){
+        svgEffectEnd3.classList.add("svgEffectEnd-3")
+    }
+}
+window.addEventListener("scroll", animatedSvg3)
+
